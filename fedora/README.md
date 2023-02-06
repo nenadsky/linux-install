@@ -96,7 +96,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 ```
 
 ## Shell Script to Install Required Packages (Optional)
-The `fedora-kde-min-packages.sh` script in this repo can be used to install all of the required packages (does not include recommended or optional). You may execute the script as is or add your desired packages (or remove ones) to the script. The script simply checks it was run as sudo or root and then executes the `dnf install package1 package2` command from the "Required Packages" section of this guide above so you do not have to manually type all the packages to install. It does nothing else.
+The `fedora-minimal.sh` script in this repo can be used to install all of the required packages (does not include recommended or optional). You may execute the script as is or add your desired packages (or remove ones) to the script. The script simply checks it was run as sudo or root and then executes the `dnf install package1 package2` command from the "Required Packages" section of this guide above so you do not have to manually type all the packages to install. It does nothing else.
 
 To execute the script (assuming your are in the your home directory:
 
