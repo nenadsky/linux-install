@@ -112,7 +112,7 @@ This will install the packages, you will still need to execute the commands to e
 * `dnf groupinfo "group name"` (Lists all the packages and groups contained within a group. Replace `group name` with the actual group name)
 * `dnf search keyword` (Replace `keyword` with the package name, word or short phrase to search for. This is used to find packages in `dnf`)
 * `df -h` (Lists all file systems)
-* `dnf erase <pkg_name> --noautoremove` (Remove single package with out removing its dependencies)
+* `dnf erase <pkg_name> --noautoremove` (Remove single package without removing its dependencies)
 
 ## Final Thoughts
 This guide should provide a solid foundation for a lean, minimalistic Fedora KDE install. This guide can also be called installing Fedora the Arch way :) BIG thanks to [Zer0CoolX](https://github.com/Zer0CoolX) for his work. His [repo and script](https://github.com/Zer0CoolX/Fedora-KDE-Minimal-Install-Guide) are the foundation for mine adjustments to the script.
