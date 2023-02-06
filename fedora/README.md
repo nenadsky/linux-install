@@ -105,7 +105,7 @@ sudo chmod +x fedora-minimal.sh
 sudo ./fedora-minimal.sh
 ```
 
-This will install the packages, you will still need to execute the commands to enable SDDM, set the graphical.target and reboot. Those steps are detailed above in the [Installing KDE Plasma Desktop Environtment](https://github.com/nenadsky/linux-install/fedora/#installing-kde-plasma-desktop-environment) section of this guide. You can also add to or extend the script to install other desired packages, include/automate additonal commands, etc.
+This will install the packages, you will still need to execute the commands to enable SDDM, set the graphical.target and reboot. Those steps are detailed above in the [Installing KDE Plasma Desktop Environtment](https://github.com/nenadsky/linux-install/tree/main/fedora#installing-kde-plasma-desktop-environment) section of this guide. You can also add to or extend the script to install other desired packages, include/automate additonal commands, etc.
 
 **Helpful Commands**
 * `dnf grouplist` (Lists all available groups to install)
