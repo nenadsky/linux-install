@@ -66,7 +66,7 @@ From here on in this guide I will assume that a given machine has a working inte
 The following packages can be installed issuing a single comand of:
 
 ```Bash
-dnf install xorg-x11-server-Xorg xorg-x11-drv-amdgpu xorg-x11-drv-fbdev xorg-x11-drv-evdev sddm plasma-desktop plasma-discover plasma-systemmonitor sddm-kcm kde-partitionmanager cups kde-print-manager dolphin konsole5 okular gwenview spectacle kate ark kcalc firefox fuse bash-completion htop neofetch"
+dnf install xorg-x11-server-Xorg xorg-x11-drv-amdgpu xorg-x11-drv-fbdev xorg-x11-drv-evdev sddm plasma-desktop plasma-discover plasma-systemmonitor sddm-kcm kde-partitionmanager cups kde-print-manager dolphin konsole5 okular gwenview spectacle kate ark kcalc firefox fuse bash-completion htop neofetch
 ```
 
 Then we need to enable sddm and set the graphical.target as the default as follows (each line is a seperate command):
