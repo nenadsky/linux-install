@@ -66,7 +66,7 @@ From here on in this guide I will assume that a given machine has a working inte
 The following packages can be installed issuing a single comand of:
 
 ```Bash
-dnf install xorg-x11-server-Xorg xorg-x11-drv-amdgpu xorg-x11-drv-fbdev xorg-x11-drv-evdev sddm plasma-desktop plasma-discover plasma-systemmonitor sddm-kcm kde-partitionmanager cups kde-print-manager dolphin konsole5 okular gwenview spectacle kate ark fuse bash-completion htop neofetch"
+dnf install xorg-x11-server-Xorg xorg-x11-drv-amdgpu xorg-x11-drv-fbdev xorg-x11-drv-evdev sddm plasma-desktop plasma-discover plasma-systemmonitor sddm-kcm kde-partitionmanager cups kde-print-manager dolphin konsole5 okular gwenview spectacle kate ark kcalc firefox fuse bash-completion htop neofetch"
 ```
 
 Then we need to enable sddm and set the graphical.target as the default as follows (each line is a seperate command):
@@ -112,6 +112,7 @@ This will install the packages, you will still need to execute the commands to e
 * `dnf groupinfo "group name"` (Lists all the packages and groups contained within a group. Replace `group name` with the actual group name)
 * `dnf search keyword` (Replace `keyword` with the package name, word or short phrase to search for. This is used to find packages in `dnf`)
 * `df -h` (Lists all file systems)
+* `dnf erase <pkg_name> --noautoremove` (Remove single package with out removing its dependencies)
 
 ## Final Thoughts
 This guide should provide a solid foundation for a lean, minimalistic Fedora KDE install. This guide can also be called installing Fedora the Arch way :) BIG thanks to [Zer0CoolX](https://github.com/Zer0CoolX) for his work. His [repo and script](https://github.com/Zer0CoolX/Fedora-KDE-Minimal-Install-Guide) are the foundation for mine adjustments to the script.
