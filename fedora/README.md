@@ -101,8 +101,8 @@ The `fedora-minimal.sh` script in this repo can be used to install all of the re
 To execute the script (assuming your are in the your home directory:
 
 ```Bash
-sudo chmod +x fedora-minimal.sh
-sudo ./fedora-minimal.sh
+sudo chmod +x fedora-minimal-plasma.sh
+sudo ./fedora-minimal-plasma.sh
 ```
 
 This will install the packages, you will still need to execute the commands to enable SDDM, set the graphical.target and reboot. Those steps are detailed above in the [Installing KDE Plasma Desktop Environtment](https://github.com/nenadsky/linux-install/tree/main/fedora#installing-kde-plasma-desktop-environment) section of this guide. You can also add to or extend the script to install other desired packages, include/automate additonal commands, etc.
