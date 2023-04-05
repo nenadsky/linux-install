@@ -7,11 +7,8 @@ fi
 
 # Install KDE Packages
 dnf install \
-  xorg-x11-server-Xorg \
-  xorg-x11-drv-amdgpu \
-  xorg-x11-drv-fbdev \
-  xorg-x11-drv-evdev \
-  sddm plasma-desktop \
+  sddm \
+  plasma-desktop \
   plasma-discover \
   plasma-systemmonitor \
   sddm-kcm \
