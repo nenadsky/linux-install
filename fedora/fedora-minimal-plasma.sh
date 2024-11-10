@@ -28,6 +28,7 @@ dnf install \
   htop \
   fastfetch
   
-systemctl enable sddm
+systemctl disable lightdm.service
+systemctl enable sddm.service
 systemctl set-default graphical.target
   
