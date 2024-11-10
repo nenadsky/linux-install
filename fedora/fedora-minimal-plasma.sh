@@ -16,7 +16,7 @@ dnf install \
   cups \
   kde-print-manager \
   dolphin \
-  konsole5 \
+  konsole \
   okular \
   gwenview \
   spectacle \
@@ -25,7 +25,7 @@ dnf install \
   fuse \
   bash-completion \
   htop \
-  neofetch
+  fastfetch
   
 systemctl enable sddm
 systemctl set-default graphical.target
