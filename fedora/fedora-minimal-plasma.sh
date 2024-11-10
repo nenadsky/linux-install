@@ -22,6 +22,7 @@ dnf install \
   spectacle \
   kate \
   ark \
+  firefox \
   fuse \
   bash-completion \
   htop \
