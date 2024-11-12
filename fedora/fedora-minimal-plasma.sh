@@ -13,6 +13,7 @@ dnf install \
   plasma-systemmonitor \
   sddm-kcm \
   kde-partitionmanager \
+  plasma-nm \
   cups \
   kde-print-manager \
   dolphin \
@@ -26,9 +27,10 @@ dnf install \
   fuse \
   bash-completion \
   htop \
+  libreoffice \
+  libreoffice-kf6 \
   fastfetch
   
-#systemctl disable lightdm.service
 systemctl enable sddm.service
 systemctl set-default graphical.target
   
