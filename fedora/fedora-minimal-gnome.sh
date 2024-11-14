@@ -25,7 +25,7 @@ dnf install \
   bash-completion \
   htop \
   libreoffice \
-  libreoffice-kf6 \
+  libreoffice-gtk3 \
   fastfetch \
   @development-tools
   
