@@ -1,7 +1,7 @@
-## Fedora 41 Minimal KDE Plasma Install
-A guide to install Fedora Linux with the KDE Plasma Desktop Environment (DE) from a minimal Fedora installation. This will allow better control over which packages are included in Fedora KDE and result in a cleaner, lighter Fedora installation than the official Fedora KDE spin offers. The guide will provide step-by-step instructions to accomplish installing the KDE DE on top of a minimal Fedora install with basic set of apps to provide basic desktop functionality. 
+## Fedora 41 Minimal KDE Plasma / Gnome Install
+A guide to install Fedora Linux with the KDE Plasma Desktop Environment (DE) / Gnome from a minimal Fedora installation. This will allow better control over which packages are included in Fedora KDE and result in a cleaner, lighter Fedora installation than the official Fedora KDE spin offers. The guide will provide step-by-step instructions to accomplish installing the KDE DE on top of a minimal Fedora install with basic set of apps to provide basic desktop functionality. 
 
-I set out to do this as I found the official Fedora KDE spin to be bloated. I found out I was not the only person who felt this way as I found plenty of evidence online of others who felt the same about Fedora's official KDE spin. The issue is that the Fedora KDE spin includes many programs and packages that the majority of people do not want or use. From another perspective, people would rather have the option to install the software packages versus having them installed without choice. In my research I did not find any answers that satisfied my desire for a clean, light Fedora KDE installation. Most people seemed to be taking Workstation and slapping KDE on top of it or taking the KDE spin and trying to uninstall stuff in a painstaking manner.
+I set out to do this as I found the official Fedora KDE spin to be bloated. I found out I was not the only person who felt this way as I found plenty of evidence online of others who felt the same about Fedora's official KDE spin / Workstation. The issue is that the Fedora KDE spin / Workstation includes many programs and packages that the majority of people do not want or use. From another perspective, people would rather have the option to install the software packages versus having them installed without choice. In my research I did not find any answers that satisfied my desire for a clean, light Fedora KDE/Gnome installation. 
 
 Just to be clear, this isnt an extreme take on minimalism. I am positive there are packages that can be excluded from my guide and have a machine still work. My real goal here is to avoid the trove of KDE applications included in the Fedora KDE spin and avoid having multiple packages for the same thing (like 3 text editors, 2 software centers, etc.). Ideally, I want Fedora KDE with a select few KDE applications.
 
@@ -14,7 +14,7 @@ I am posting this as personal reference but also for others benefit in case they
 * Fedora Everything ISO can be downloaded from https://alt.fedoraproject.org/. This is basically what some may call a net install ISO.
 * Github repo [Fedora KDE Minimal Install](https://github.com/Zer0CoolX/Fedora-KDE-Minimal-Install-Guide)
 
-## Requirements for Fedora KDE Minimal
+## Requirements for Fedora KDE/Gnome Minimal
 * Fedora Everything ISO. Made bootable via a physical disc, USB drive or via PXE. Official documentation on [Preparing Boot Media](https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#sect-preparing-obtaining-images)
 * Internet connection. The ISO above included only the packages required to run the installer. All selected packages are downloaded over the internet to install. Post minimal install, internet will be required to add the packages we need.
 * If using Wifi (see the [Wifi Networking](https://github.com/nenadsky/linux-install/tree/main/fedora#wifi-networking-support) portion of this guide):
@@ -37,14 +37,14 @@ The [Installation Summary](https://docs.fedoraproject.org/en-US/fedora/f36/insta
 2. [Installation Destination](https://docs.fedoraproject.org/en-US/fedora/f36/install-guide/install/Installing_Using_Anaconda/#sect-installation-gui-storage-partitioning). It is from this section that you can partition your drive(s), set file systems, etc. If you are unsure what to select, Automatic configuration is likely the best option. If you know what you are doing and want to partition your drive a certina way, select "I will configure partitioning". Optionally, you can check the "Encrypt my data" checkbox if you want to use disk encryption. Press the "Done" button at the top left when finished.
 3. [Network & Hostname](https://docs.fedoraproject.org/en-US/fedora/f36/install-guide/install/Installing_Using_Anaconda/#sect-installation-gui-network-configuration). From here set at least one network connection up and have it be active. It is possible that one or more connections may already be connected and active. You could set the IP statically or via DHCP. Optionally, you may chose to set the hostname of the computer at this time as well. Press the "Done" button at the top left when finished.
   * **NOTE:** If using Wifi AND a hidden SSID you may run into trouble connecting as Anaconda may not have an option to select hidden Wifi networks. If this is the case, there are 2 options to connnect to your wifi. A) Temporarily set the SSID visible, B) Pick any visible Wifi connection with some sort of protection enabled (IE: not an open network). Press "Cancel" on the password dialog. Click the "Configure" button at the bottom right. Change the name to your Wifi's hidden SSID, the password field to your Wifi password and all other settings according to those matching your Wifi network. Press "Ok". If it does not appear to work (sometimes the first attempt does not), try toggling the "switch" at the top to disable and enable Wifi. If this does not work redo the steps again but use another visible Wifi network. When it works, your SSID will be listed along with its status.
-4. [Software Selection](https://docs.fedoraproject.org/en-US/fedora/f36/install-guide/install/Installing_Using_Anaconda/#sect-installation-gui-software-selection). After the "Installation Source" loads, which may take a minute, this option is used to determine what to initially install. Select "Minimal Install" on the left hand side and nothing on the right hand side. Press the "Done" button at the top left when finished.
+4. [Software Selection](https://docs.fedoraproject.org/en-US/fedora/f36/install-guide/install/Installing_Using_Anaconda/#sect-installation-gui-software-selection). After the "Installation Source" loads, which may take a minute, this option is used to determine what to initially install. Select "Custom Operating System" on the left hand side and nothing on the right hand side. Press the "Done" button at the top left when finished.
 5. Click the "Begin Installation" button at the bottom right of the "Installation Summary" screen to start the install.
 6. Set the password for the root user. I recommend using something strong and unique.
 7. [Create a user](https://docs.fedoraproject.org/en-US/fedora/f36/install-guide/install/Installing_Using_Anaconda/#sect-installation-gui-create-user). This will be the user you will typically login as and use the computer as. If want this user to have sudo, check the box for "Make this user administrator". Set the password, again I recommend something strong and unique.
 
 Progress will be shown on screen and when complete the computer will reboot and load to a text/shell login asking for username and password. I recommend using the user creation from step 7 above, assuming they had been given admin rights (sudo). You can instead use root credentials to login.
 
-## 2. Installing KDE Plasma Desktop Environtment
+## 2. Installing KDE Plasma / Gnome Desktop Environtment
 
 ### Wifi Networking Support
 Since this guide is intended for desktop installation, the packages listed in this section are necessary to enable the use of the Wi-Fi module. So this step is not necessary. 
@@ -65,20 +65,37 @@ From here on in this guide I will assume that a given machine has a working inte
 ### Required Packages
 The following packages can be installed issuing a single comand of:
 
+#### KDE Plasma
+
 ```Bash
-dnf install sddm plasma-desktop plasma-discover plasma-systemmonitor sddm-kcm kde-partitionmanager cups kde-print-manager dolphin konsole okular gwenview spectacle kate ark kcalc firefox fuse bash-completion htop fastfetch
+dnf install sddm plasma-desktop plasma-discover plasma-systemmonitor sddm-kcm kde-partitionmanager cups kde-print-manager dolphin konsole okular gwenview spectacle kate ark kcalc firefox fuse bash-completion htop fastfetch libreoffice libreoffice-kf6 @development-tools
 ```
 
-Then we need to enable disable lightdm service and enable sddm and set the graphical.target as the default as follows (each line is a seperate command):
+Then we need to enable sddm service and set the graphical.target as the default as follows (each line is a seperate command):
 
 ```Bash
-sudo systemctl disable lightdm.service
 sudo systemctl enable sddm.service
 sudo systemctl set-default graphical.target
 reboot
 ```
 
-This should reboot and load the SDDM graphical screen for logging in, then load to KDE plasma 5 DE.
+This should reboot and load the SDDM graphical screen for logging in, then load to KDE Plasma DE.
+
+#### GNOME
+
+
+```Bash
+dnf install gdm gnome-shell gnome-console nautilus gnome-calculator gnome-disk-utility gnome-system-monitor cups gnome-software gnome-tweaks evince gedit file-roller firefox fuse bash-completion htop libreoffice libreoffice-gtk3 fastfetch @development-tools
+```
+
+Then we need to enable gdm service and set the graphical.target as the default as follows (each line is a seperate command):
+
+```Bash
+sudo systemctl enable gdm.service
+sudo systemctl set-default graphical.target
+reboot
+```
+
 
 ### Other Packages
 
@@ -104,6 +121,11 @@ To execute the script (assuming your are in the your home directory:
 ```Bash
 sudo chmod +x fedora-minimal-plasma.sh
 sudo ./fedora-minimal-plasma.sh
+```
+
+```Bash
+sudo chmod +x fedora-minimal-gnome.sh
+sudo ./fedora-minimal-gnome.sh
 ```
 
 This will install the packages, you will still need to execute the commands to enable SDDM, set the graphical.target and reboot. Those steps are detailed above in the [Installing KDE Plasma Desktop Environtment](https://github.com/nenadsky/linux-install/tree/main/fedora#installing-kde-plasma-desktop-environment) section of this guide. You can also add to or extend the script to install other desired packages, include/automate additonal commands, etc.
