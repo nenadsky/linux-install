@@ -26,10 +26,13 @@ dnf install \
   firefox \
   fuse \
   bash-completion \
+  dnf-plugins-core \
+  tkdnd \
   htop \
   libreoffice \
   libreoffice-kf6 \
-  fastfetch
+  fastfetch \
+  --setopt=install_weak_deps=False
   
 systemctl enable sddm.service
 systemctl set-default graphical.target
