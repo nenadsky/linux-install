@@ -18,16 +18,21 @@ dnf install \
   gnome-software \
   gnome-tweaks \
   evince \
+  eog \
+  eog-plugins \
   gedit \
   file-roller \
   firefox \
   fuse \
   bash-completion \
   htop \
+  dnf-plugins-core \
   libreoffice \
   libreoffice-gtk3 \
+  tkdnd \
   fastfetch \
   @development-tools
+  --setopt=install_weak_deps=False
   
 systemctl enable gdm.service
 systemctl set-default graphical.target
