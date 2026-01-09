@@ -1,4 +1,4 @@
-## Fedora 41 Minimal KDE Plasma / Gnome Install
+## Fedora 43 Minimal KDE Plasma / Gnome Install
 A guide to install Fedora Linux with the KDE Plasma Desktop Environment (DE) / Gnome from a minimal Fedora installation. This will allow better control over which packages are included in Fedora KDE and result in a cleaner, lighter Fedora installation than the official Fedora KDE spin offers. The guide will provide step-by-step instructions to accomplish installing the KDE DE on top of a minimal Fedora install with basic set of apps to provide basic desktop functionality. 
 
 I set out to do this as I found the official Fedora KDE spin to be bloated. I found out I was not the only person who felt this way as I found plenty of evidence online of others who felt the same about Fedora's official KDE spin / Workstation. The issue is that the Fedora KDE spin / Workstation includes many programs and packages that the majority of people do not want or use. From another perspective, people would rather have the option to install the software packages versus having them installed without choice. In my research I did not find any answers that satisfied my desire for a clean, light Fedora KDE/Gnome installation. 
@@ -24,7 +24,7 @@ I am posting this as personal reference but also for others benefit in case they
 * Willingness to use the terminal to setup and configure some packages and settings.
 * Willingness to troubleshoot and work out problems you may encounter specific to your unique setup/machine/environment.
 
-## 1. Install Fedora 41 Minimal 
+## 1. Install Fedora 43 Minimal 
 In this part of the guide we are installing Fedora minimal from the boot media created as listed in the above requirements. Instead of re-writing what has already been documented, I will outline the process and provide links to official documenation. Take some liberties with your own setup depending on your wants and needs.
 
 1. Boot from the installation media. [Booting the Installation](https://docs.fedoraproject.org/en-US/fedora/f30/install-guide/install/Booting_the_Installation/). Here you select the option to install Fedora
@@ -69,7 +69,7 @@ The following packages can be installed issuing a single comand of:
 #### KDE Plasma
 
 ```Bash
-dnf install sddm plasma-desktop plasma-discover plasma-systemmonitor sddm-kcm kde-partitionmanager cups kde-print-manager dolphin konsole okular gwenview spectacle kate ark kcalc firefox fuse bash-completion htop fastfetch libreoffice libreoffice-kf6 @development-tools
+dnf install sddm plasma-desktop plasma-discover plasma-discover-notifier plasma-discover-packagekit plasma-discover-flatpak plasma-systemmonitor sddm-kcm kde-partitionmanager cups kde-print-manager dolphin konsole okular gwenview spectacle kate ark kcalc firefox fuse bash-completion htop fastfetch libreoffice libreoffice-kf6 @development-tools
 ```
 
 Then we need to enable sddm service and set the graphical.target as the default as follows (each line is a seperate command):
