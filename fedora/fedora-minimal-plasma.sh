@@ -10,6 +10,9 @@ dnf install \
   sddm \
   plasma-desktop \
   plasma-discover \
+  plasma-discover-notifier \
+  plasma-discover-packagekit \
+  plasma-discover-flatpak \
   plasma-systemmonitor \
   sddm-kcm \
   kde-partitionmanager \
