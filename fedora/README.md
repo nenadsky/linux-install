@@ -10,9 +10,10 @@ I will assume for the rest of this guide that Fedora Linux will be installed on 
 
 I am posting this as personal reference but also for others benefit in case they are also interesting in a more minimal Fedora KDE setup.
 
-## Resources for Installing Fedora KDE Minimally
-* Fedora Everything ISO can be downloaded from https://alt.fedoraproject.org/. This is basically what some may call a net install ISO.
+## Resources for Installing Fedora KDE/Gnome Minimally
+* Fedora Everything ISO can be downloaded from [Fedora Everything version](https://fedoraproject.org/misc/). This is basically what some may call a net install ISO.
 * Github repo [Fedora KDE Minimal Install](https://github.com/Zer0CoolX/Fedora-KDE-Minimal-Install-Guide)
+* Githun repo [Fedora KDE/Gnome Minimal Install](https://github.com/nenadsky/linux-install/tree/main/fedora)
 
 ## Requirements for Fedora KDE/Gnome Minimal
 * Fedora Everything ISO. Made bootable via a physical disc, USB drive or via PXE. Official documentation on [Preparing Boot Media](https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#sect-preparing-obtaining-images)
@@ -139,4 +140,4 @@ This will install the packages, you will still need to execute the commands to e
 * `dnf erase <pkg_name> --noautoremove` (Remove single package without removing its dependencies)
 
 ## Final Thoughts
-This guide should provide a solid foundation for a lean, minimalistic Fedora KDE install. This guide can also be called installing Fedora the Arch way :) BIG thanks to [Zer0CoolX](https://github.com/Zer0CoolX) for his work. His [repo and script](https://github.com/Zer0CoolX/Fedora-KDE-Minimal-Install-Guide) are the foundation for mine adjustments to the script.
+This guide should provide a solid foundation for a lean, minimalistic Fedora KDE and GNOME install. This guide can also be called installing Fedora the Arch way :) BIG thanks to [Zer0CoolX](https://github.com/Zer0CoolX) for his work. His [repo and script](https://github.com/Zer0CoolX/Fedora-KDE-Minimal-Install-Guide) are the foundation for mine adjustments to the script.
