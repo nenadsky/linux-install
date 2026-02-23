@@ -62,7 +62,7 @@ Alternatively, if you have a wired NIC as well (even a USB to NIC adapter) then 
 
 Note: After installing the base system, you will not have a wireless network enabled (of course, this applies to those who use WiFi during installation). There is no firmware installed, so you need to use either a wired network or USB tethering via your phone. For the Intel WiFi module, the required packages are: iwlegacy-firmware iwlwifi-mvm-firmware. After that, the WiFi connection will work!
 
-[![Fedora minimall GNOME installation](https://img.youtube.com/vi/59GxMCNmEJs&t/0.jpg)](https://www.youtube.com)
+[![Fedora minimall GNOME installation](https://img.youtube.com/vi/59GxMCNmEJs/0.jpg)](https://www.youtube.com)
 
 From here on in this guide I will assume that a given machine has a working internet connection.
 
